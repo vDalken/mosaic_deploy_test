@@ -9,7 +9,7 @@ RUN mvn clean install -DskipTests
 
 FROM openjdk:21-jdk-slim
 
-EXPOSE 8080
+EXPOSE 10000
 
 COPY --from=build /target/deploy-test-0.0.1-SNAPSHOT.jar app.jar
 
